@@ -23,15 +23,36 @@
 
     <div class="container centrer">
         <h1 id="titreAccueil">Titre app</h1>
-        <form action="">
-                <input id="inputAccueil" type="text" placeholder="Exemple:1030...">
+        <form action="post" action="">
+<!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
+          <select id="inputAccueil" name="listeCommune">
+            <option id="choixCommune" value="http://www.monsite.net/accueil.html">1000 - Bruxelles</option>
+            <option value="http://www.monsite.net/apropos.html">1030-Schaerbeek</option>
+            <option value="http://www.monsite.net/plan.html">1040-Etterbeek</option>
+            <option value="http://www.monsite.net/plan.html">1050-Ixelles</option>
+            <option value="http://www.monsite.net/plan.html">1060-Saint-Gilles</option>
+            <option value="http://www.monsite.net/plan.html">1070-Anderlecht</option>
+            <option value="http://www.monsite.net/plan.html">1080-Molenbeek-St-Jean</option>
+            <option value="http://www.monsite.net/plan.html">1081-Koekelberg</option>
+            <option value="http://www.monsite.net/plan.html">1082-Berchem-Ste-Agathe</option>
+            <option value="http://www.monsite.net/plan.html">1083-Ganshoren</option>
+            <option value="http://www.monsite.net/plan.html">1090-Jette</option>
+            <option value="http://www.monsite.net/plan.html">1160-Auderghem</option>
+            <option value="http://www.monsite.net/plan.html">1170-Watermael-Boitsfort</option>
+            <option value="http://www.monsite.net/plan.html">1140-Evere</option>
+            <option value="http://www.monsite.net/plan.html">1150-Woluwé-St-Pierre</option>
+            <option value="http://www.monsite.net/plan.html">1180-Uccle</option>
+            <option value="http://www.monsite.net/plan.html">1190-Forest</option>
+            <option value="http://www.monsite.net/plan.html">1200-Woluwé-St-Lambert</option>
+            <option value="http://www.monsite.net/contact.html">1210-St Josse-ten-Noode</option>
+          </select>
         </form>
 
-        
-        <div class="map" id="map"></div> <!-- container de la map -->
-        
-    </div>
 
+        <div class="map" id="map"></div> <!-- container de la map -->
+
+    </div>
+        </form>
 
 
 <script>
@@ -55,6 +76,6 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcly7QI1q9c0g31v_iGykq2Yb
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
