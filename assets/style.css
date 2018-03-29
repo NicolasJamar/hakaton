@@ -4,9 +4,10 @@
     text-align:center;
 }
 
-
-@media screen and (max-width: 768px){
-
+h2{
+    font-size:1em;
+    margin-top:10px;
+}
 
     body{
         margin:0 !important;
@@ -43,8 +44,8 @@
 
     .map { /* Taille de la map */
         margin: 0 auto;
-        height: 250px;
-        width: 250px;
+        height: 550px;
+        width: 750px;
         margin-bottom: 15px;
         margin-top:15px;
        }
@@ -67,12 +68,11 @@
     }
 
 
-    }
 
     /*.................................Page enregistrer son ....................................*/
     #parentMicro{
-        width: 150px;
-        height: 150px;
+        max-width: 150px;
+        max-height: 150px;
         margin: 0 auto;
         background-color: #6464a9;
         text-align: center;
@@ -80,11 +80,9 @@
         line-height: 150px;
         box-shadow: 2px 2px 3px #16232E;
     }
-    #microBouton{
-        width: 60%;
-    }
+
     .titre{
-        margin-bottom: 35px;
+        margin-bottom: 35px !important;
     }
     #graph{
         width:60%;
@@ -97,7 +95,12 @@
         margin-top: 10px;
         margin-right: 17px;
     }
-    /*Page commune ============================================*/
+    #sonContainer1{
+        margin-top: 42px;
+    }
+    #microBouton{
+        width: 44%;
+    }
 
 
     /* .......................formulaire...........  */
@@ -121,6 +124,12 @@
         width: 150px;
     }
     
+    #pInscrire{
+        position: relative;
+        left: 300px;
+        margin-top: 5px;
+        top: 9px;
+    }
 
     /*....................Commune.......................*/
 
@@ -128,6 +137,7 @@
         text-align: center;
         width: 100%;
         margin-bottom: 5vh;
+        margin-top: 14vh;
       }
       .buttonJourNuit {
         display: flex;
@@ -155,5 +165,48 @@
         color: white;
         border: none;
       }
+
+
+      /*  .........................Footer...............................*/
+      footer{
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        line-height: 50px;
+        color: #ababab;
+        margin-top: 50px;
+      }
        
 
+@media screen and (max-width: 768px){
+
+    .map { /* Taille de la map */
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+        margin-bottom: 15px;
+        margin-top:15px;
+       }
+
+
+       /*  ..............Page son.................*/
+       
+       #parentMicro{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        background-color: #6464a9;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 150px;
+        box-shadow: 2px 2px 3px #16232E;
+    }
+
+
+       #microBouton{
+        width: 60%;
+    }
+}
