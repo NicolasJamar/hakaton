@@ -31,13 +31,16 @@
         margin-top: 20px;
         font-family: 'Ubuntu', sans-serif;
     }
-    
+
     #inputAccueil{ /*   */
         background-color: #dad8d8;
-        width: 250px;
+        width: auto;
         margin-bottom: 40px;
         }
-    
+    #choixCommune {
+        width: auto;
+    }
+
     .map { /* Taille de la map */
         margin: 0 auto;
         height: 250px;
@@ -76,7 +79,7 @@
         border-radius: 50%;
         line-height: 150px;
         box-shadow: 2px 2px 3px #16232E;
-    }   
+    }
     #microBouton{
         width: 60%;
     }
@@ -94,6 +97,7 @@
         margin-top: 10px;
         margin-right: 17px;
     }
+    /*Page commune ============================================*/
 
 
     /* .......................formulaire...........  */
@@ -152,4 +156,4 @@
         border: none;
       }
        
-}
+
