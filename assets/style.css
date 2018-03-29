@@ -1,7 +1,4 @@
-#map {
-    height: 400px;
-    width: 800px;
-   }
+
 
 .centrer{
     text-align:center;
@@ -9,6 +6,12 @@
 
 
 @media screen and (max-width: 768px){
+
+ /*.......................................Header..............................................*/
+    .header{
+        display: flex;
+        justify-content: flex-end;
+    }
 
     /*....................................Page d'accueil.....................................*/
     #titreAccueil{
@@ -22,7 +25,7 @@
         margin-bottom: 40px;
         }
     
-    #map { /* Taille de la map */
+    .map { /* Taille de la map */
         margin: 0 auto;
         height: 250px;
         width: 250px;
@@ -50,6 +53,12 @@
         width:60%;
         height:60%;
         margin:0 auto;
+    }
+
+    .nav{
+        margin-bottom: 17px;
+        margin-top: 10px;
+        margin-right: 17px;
     }
 
        
