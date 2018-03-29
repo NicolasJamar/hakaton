@@ -8,10 +8,24 @@
 @media screen and (max-width: 768px){
 
  /*.......................................Header..............................................*/
-    .header{
-        display: flex;
-        justify-content: flex-end;
+    
+    body {
+        font-family: "Roboto", sans-serif;
+  
     }
+    
+    .header{
+        height:10vh;
+        width:100%;
+        padding-top: 1.4em;
+        /* justify-content: flex-end; */
+        background-color:#140785;
+
+    }
+
+
+
+
 
     /*....................................Page d'accueil.....................................*/
     #titreAccueil{
@@ -55,11 +69,51 @@
         margin:0 auto;
     }
 
-    .nav{
-        margin-bottom: 17px;
-        margin-top: 10px;
-        margin-right: 17px;
-    }
 
-       
+
+/*........navigation.......*/
+
+
+.container centrer header {
+    height:10vh;
+    margin-top:2em;
+    padding: 0;
+    width:100%;
+    
 }
+
+
+.nav{
+    display: inline;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-left: 15px;
+    width:30%;
+    padding-left: 1.5em;
+    /* margin-bottom: 17px;
+    margin-top: 10px;
+    margin-right: 17px; */
+}
+
+  
+
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
