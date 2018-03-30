@@ -26,8 +26,8 @@ CustomMarker.prototype.draw = function() {
 		
 		div.style.position = 'absolute';
 		div.style.cursor = 'pointer';
-		div.style.maxWidth = '100px';
-		div.style.maxHeight = '100px';
+		div.style.width = '50px';
+		div.style.height = '50px';
 		div.style.background = 'RGBA(15,12,14,0.5)';
 		div.style.border ='red solid 3px';
 		div.style.textAlign = 'center';
@@ -41,7 +41,7 @@ CustomMarker.prototype.draw = function() {
 		}
 		
 		google.maps.event.addDomListener(div, "click", function(event) {
-			alert('Simon is a Bitche!');			
+		//	alert('Simon is a Bitche!');			
 			google.maps.event.trigger(self, "click");
 		});
 		

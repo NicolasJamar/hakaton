@@ -223,10 +223,12 @@ width: 100%;
 margin-bottom:10px;
 
 } 
-.maker{
+.marker{
     text-align:center ;
     color:white !important;
-    line-height:20px !important;
+    line-height:50px !important;
+    width: 50px !important;
+    height:50px !important;
 } 
 
 @media screen and (max-width: 768px){
