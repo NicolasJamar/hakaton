@@ -179,6 +179,9 @@ h2{
         color: #ababab;
         margin-top: 50px;
       }
+main{
+    height:300px;
+}  
        
 
 @media screen and (max-width: 768px){
@@ -189,6 +192,11 @@ h2{
         width: 250px;
         margin-bottom: 15px;
         margin-top:15px;
+       }
+
+       .marker{
+        width:20px !important;
+        height:20px !important;
        }
 
 
