@@ -123,7 +123,7 @@ h2{
     #boutonAjout{
         width: 150px;
     }
-    
+
     #pInscrire{
         position: relative;
         left: 300px;
@@ -179,7 +179,7 @@ h2{
         color: #ababab;
         margin-top: 50px;
       }
-       
+
 
 @media screen and (max-width: 768px){
 
@@ -193,7 +193,7 @@ h2{
 
 
        /*  ..............Page son.................*/
-       
+
        #parentMicro{
         width: 150px;
         height: 150px;
