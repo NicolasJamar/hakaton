@@ -14,30 +14,43 @@
 <body>
     
         <header>
-                <div class="container header">
-                    <a class="nav" href="index.html">Index</a>
+                <div class="header">
+                    <a class="nav" href="index.html">Accueil</a>
                     <a class="nav" href="commune.html">Commune</a>
+                    <a class="nav" href="son.html">Enregristrer un son</a>
                     
                 </div>
             </header>
 
-    <div class="container centrer">
-      
 
-            <div class="row">
-                <h2 class="col-sm-12 titre">Prendre un son</h2>
-                <div class="col-sm-12" id="parentMicro">
-                    <img id="microBouton" src="assets/images/microphone.png" alt="micro pour enregistrer le son" >       
-                 </div>
-            </div>
 
-            <div class="row">
-                    <h2 class="col-sm-12 titre">Historique</h2>
-                <img id="graph" class="col-sm-12" src="assets/images/graph.jpg" alt="">
-            </div>
+        <!--........... Inscription..................-->
+        <main>
+                <p id="pInscrire">S'inscrire</p>
+                <form  id="formInscription" action="form/traitement.php" method="post">
+                  <hgroup>
+                  </hgroup>
+                  
+  
+                  <fieldset id="parentInput">
+                    <input class="input" type="text" name="user_username" placeholder="Nom" required>
+                    <input class="input" type="email" name="user_mail" placeholder="Courriel" required>
+                    <input class="input" type="password" name="user_password" placeholder="Mot de passe" required>
                 
-    
-    </div>
+                    <button class="btn btn-sm" id="boutonAjout" name="ajout" value="add">Créer un compte</button>
+                </fieldset>
+                
+                  
+                </div>
+                </form>
+                
+              </main>
+
+
+              <footer>
+                    <p>Une initiative de ....</p>
+                    <p>Copyright : team RedPill</p>
+                </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

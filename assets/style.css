@@ -4,63 +4,89 @@
     text-align:center;
 }
 
+h2{
+    font-size:1em;
+    margin-top:10px;
+}
 
-@media screen and (max-width: 768px){
-
+    body{
+        margin:0 !important;
+        padding:0 !important;
+    }
  /*.......................................Header..............................................*/
     
     body {
         font-family: "Roboto", sans-serif;
-  
     }
     
     .header{
-        height:10vh;
-        width:100%;
-        padding-top: 1.4em;
-        /* justify-content: flex-end; */
-        background-color:#140785;
+
+        display: flex;
+        justify-content: center;
+        background-color:#20c997;
     }
-
-
-
-
+    .header > a {
+        text-transform: uppercase;
+        color:white;
+        text-decoration: none;
+    }
 
     /*....................................Page d'accueil.....................................*/
     #titreAccueil{
         margin-bottom: 20px;
         margin-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
     }
-    
+
     #inputAccueil{ /*   */
         background-color: #dad8d8;
-        width: 250px;
+        width: auto;
         margin-bottom: 40px;
         }
-    
+    #choixCommune {
+        width: auto;
+    }
+
     .map { /* Taille de la map */
         margin: 0 auto;
-        height: 250px;
-        width: 250px;
+        height: 550px;
+        width: 750px;
         margin-bottom: 15px;
+        margin-top:15px;
        }
+    #parentListeDeroulante{
+        margin-bottom: 20px;
+        display:flex;
+        width: 250px;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 40px;
+    }
+    #mySelect{
+        background-color: #dcd9d9;
+        width: 80%;
+    }
+    #ok{
+        width: 15%;
+        background-color: #26263c;
+        color: white;
+    }
+
 
     /*.................................Page enregistrer son ....................................*/
     #parentMicro{
-        width: 150px;
-        height: 150px;
+        max-width: 150px;
+        max-height: 150px;
         margin: 0 auto;
         background-color: #6464a9;
         text-align: center;
         border-radius: 50%;
         line-height: 150px;
         box-shadow: 2px 2px 3px #16232E;
-    }   
-    #microBouton{
-        width: 60%;
     }
+
     .titre{
-        margin-bottom: 35px;
+        margin-bottom: 35px !important;
     }
     #graph{
         width:60%;
@@ -69,50 +95,123 @@
     }
 
 
+    .nav{
+        margin-bottom: 17px;
+        margin-top: 10px;
+        margin-right: 17px;
+    }
+    #sonContainer1{
+        margin-top: 42px;
+    }
+    #microBouton{
+        width: 44%;
+    }
 
-/*........navigation.......*/
 
+    /* .......................formulaire...........  */
 
-.container centrer header {
-    height:10vh;
-    margin-top:2em;
-    padding: 0;
-    width:100%;
+    #formInscription{
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        margin-bottom:10px;
+    }
+    #parentInput{
+        background-color: #39D1B4;
+        display: flex;
+        width: 250px;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    #boutonAjout{
+        width: 150px;
+    }
     
+    #pInscrire{
+        position: relative;
+        left: 300px;
+        margin-top: 5px;
+        top: 9px;
+    }
+
+    /*....................Commune.......................*/
+
+    #commune {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 14vh;
+      }
+      .buttonJourNuit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5vh;
+      }
+      #buttonJour {
+        margin-right: 15vh;
+        padding: 15px 20px 15px 20px;
+        width: auto;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.5em;
+        border: none;
+      }
+      #buttonNuit {
+        padding: 15px 20px 15px 20px;
+        width: auto;
+        background-color: #007bff;
+        font-size: 1.5em;
+        color: white;
+        border: none;
+      }
+
+
+      /*  .........................Footer...............................*/
+      footer{
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        line-height: 50px;
+        color: #ababab;
+        margin-top: 50px;
+      }
+       
+
+@media screen and (max-width: 768px){
+
+    .map { /* Taille de la map */
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+        margin-bottom: 15px;
+        margin-top:15px;
+       }
+
+
+       /*  ..............Page son.................*/
+       
+       #parentMicro{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        background-color: #6464a9;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 150px;
+        box-shadow: 2px 2px 3px #16232E;
+    }
+
+
+       #microBouton{
+        width: 60%;
+    }
 }
-
-
-.nav{
-    display: inline;
-    font-size: 14px;
-    color: #FFF;
-    text-transform: uppercase;
-    padding-right: 15px;
-    padding-left: 15px;
-    width:30%;
-    padding-left: 1.5em;
-    /* margin-bottom: 17px;
-    margin-top: 10px;
-    margin-right: 17px; */
-}
-
-  
-
-a:hover {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-}
-
-
-

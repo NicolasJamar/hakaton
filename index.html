@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+        crossorigin="anonymous"> >>>>>>> 6fc51c632d9486f67c7838517e9933c4f7158ecb
     <link rel="stylesheet" href="assets/style.css">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -17,9 +17,10 @@
 <body>
 
     <header>
-        <div class="container header">
+        <div class="header">
             <a class="nav" href="commune.html">Commune</a>
-            <a class="nav" href="membre.html">Enregistrer un son</a>
+            <a class="nav" href="son.html">Enregistrer un son</a>
+            <a class="nav" href="membre.html">S'identifier</a>
         </div>
     </header>
 
@@ -27,18 +28,58 @@
 
 
     <div class="container centrer">
-        <h1 id="titreAccueil">Titre app</h1>
-        <form action="">
-            <input id="inputAccueil" type="text" placeholder="Exemple:1030...">
-        </form>
+
+        <h1 id="titreAccueil">DeciBelge</h1>
+        <p>J'emménage. Y-a-t'il du bruit dans ce quartier ?</p>
+
+        <!-- Liste déroulante-->
+        <div id="parentListeDeroulante">
+            <select id="mySelect">
+                <option value="Bruxelles-Ville">1000 Bruxelles-Ville</option>
+                <option value="Schaerbeek">1030 Schaerbeek</option>
+                <option value="Etterbeek">1040 Etterbeek</option>
+                <option value="Ixelles">1050 Ixelles</option>
+                <option value="stGilles">1060 Saint-Gilles</option>
+                <option value="Anderlecht">1070 Anderlecht</option>
+                <option value="Molenbeek">1080 Molenbeek-St-Jean</option>
+                <option value="Koekelberg">1081 Koekelberg</option>
+                <option value="Berchem-Ste-Agathe">1082 Berchem-Ste-Agathe</option>
+                <option value="Ganshoren">1083 Ganshoren</option>
+                <option value="Jette">1090 Jette</option>
+                <option value="Evere">1140 Evere</option>
+                <option value="Woluwé-St-Pierre">1150 Woluwé-St-Pierre</option>
+                <option value="Auderghem">1160 Auderghem</option>
+                <option value="Watermael">1170 Watermael-Boitsfort</option>
+                <option value="Uccle">1180 Uccle</option>
+                <option value="Forest">1190 Forest</option>
+                <option value="Woluwé">1200 Woluwé-St-Lambert</option>
+                <option value="Josse">1210 St Josse-ten-Noode</option>
+
+            </select>
+            <button id="ok" type="button" class="btn btn-link" onclick="myFunction()">Ok</button>
+
+        </div>
+
 
 
         <div class="map" id="map"></div>
         <!-- container de la map -->
+        >>>>>>> 6fc51c632d9486f67c7838517e9933c4f7158ecb
 
     </div>
+    </form>
+    <footer>
+        <p>Une initiative de la CIRB</p>
+        <p>Copyright : team RedPill</p>
+    </footer>
 
-
+    <!-- ..............Script choix commune...............-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").selectedIndex;
+            alert(document.getElementsByTagName("option")[x].value);
+        }
+    </script>
 
     <script>
         function initMap() {
@@ -67,3 +108,4 @@
 </body>
 
 </html>
+>>>>>>> 6fc51c632d9486f67c7838517e9933c4f7158ecb

@@ -5,31 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <<<<<<< HEAD <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Document</title>
+        =======
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> >>>>>>> 6fc51c632d9486f67c7838517e9933c4f7158ecb
+        <link rel="stylesheet" href="assets/style.css">
+        <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="container centrer header">
-            <a class="nav" href="index.html">Home</a>
-            <a class="nav" href="membre.html">Enregistrer un son</a>
+        <div class="header">
+            <a class="nav" href="index.html">Accueil</a>
+            <a class="nav" href="son.html">Enregistrer un son</a>
+            <a class="nav" href="membre.html">S'identifier</a>
+            <span class="glyphicon glyphicon-user"></span>
+            <span class="glyphicon glyphicon-envelope"></span>
         </div>
     </header>
 
     <div class="container">
         <div class="row">
-            <h2 class="col-xs-12">Commune : </h2>
+            <h2 id="commune" class="col-xs-12">Commune : </h2>
             <div class="map col-xs-12" id="map"></div>
             <!-- container de la map -->
         </div>
+        <div class="buttonJourNuit">
+            <button id="buttonJour" type="button" name="jour">Jour</button>
+            <button id="buttonNuit" type="button" name="nuit">Nuit</button>
+        </div>
     </div>
-
-
-    </div>
-
+    <footer>
+        <p>Une initiative de la CIRB</p>
+        <p>Copyright : team RedPill</p>
+    </footer>
 
 
     <script>
@@ -49,9 +60,6 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcly7QI1q9c0g31v_iGykq2Yb2SW36480&callback=initMap">
     </script>
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
