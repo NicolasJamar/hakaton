@@ -13,6 +13,9 @@ h2{
         margin:0 !important;
         padding:0 !important;
     }
+    .none{
+        display:none;
+    }
  /*.......................................Header..............................................*/
     .header{
         display: flex;
@@ -101,7 +104,10 @@ h2{
     #microBouton{
         width: 44%;
     }
-
+    
+    /* #meter{
+        background-color:red;
+    } */
 
     /* .......................formulaire...........  */
 
@@ -171,7 +177,8 @@ h2{
       footer{
         width: 100%;
         background-color: black;
-        position: absolute;
+        position: fixed;
+        bottom:0;
         display: flex;
         justify-content: space-around;
         height: 50px;
@@ -181,8 +188,40 @@ h2{
       }
 main{
     height:300px;
+
+
+    
 }  
-       
+#login,
+#login h1 {
+   width: 100%;
+   background-color: #ebeff2;
+    padding: 23px;
+    margin-top: 10vh;
+    margin-bottom: 40px;
+   }
+
+#login p {
+color: #666f73;
+padding: 14px 0 0;
+font-size: 0.8em;
+font-weight: bold;
+}
+
+#login form {
+margin: auto;
+width: 100%;
+border-radius: 5px;
+background: #ebeff2;
+
+}
+
+.user-element input,
+.pass-element input{
+width: 100%;
+margin-bottom:10px;
+
+}  
 
 @media screen and (max-width: 768px){
 

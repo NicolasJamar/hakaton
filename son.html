@@ -23,9 +23,14 @@
         <div class="container centrer">
                 <div class="row" id="sonContainer1">
                     <h2 class="col-sm-12 titre">Ajouter le son d'une rue</h2>
-                    <div class="col-sm-12 titre" id="parentMicro">
-                        <img id="microBouton" src="assets/images/microphone.png" alt="micro pour enregistrer le son" >       
+                    <div class="col-sm-12 titre" id="parentMicro" onclick="start()">
+                        <img id="microBouton" src="assets/images/microphone.png" alt="micro pour enregistrer le son"  >       
                      </div>
+
+
+                     <canvas class="col-sm-12 none" id="meter" width="100" height="50"></canvas>
+
+
                 </div>
     
                 <div class="row">
@@ -45,5 +50,20 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+        
+        <script src="volume-meter.js"></script>
+        <script src="main.js"></script>
+
+
+        <script>
+        function start(){
+                var barreMicro = document.getElementById('meter');
+                //barreMicro.classList.remove("none");
+                $(barreMicro).toggle();
+             
+            }
+            </script>
+        
+    
     </body>
 </html>
