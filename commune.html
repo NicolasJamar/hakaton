@@ -46,8 +46,8 @@
 
 </script>
                     <script>
-  function initMap() {
-    var uluru = {lat: 50.8503396, lng: 4.3517103};
+  function initMap($latitude, $longitude) {
+    var uluru = {lat: $latitude, lng: $longitude };
     var maisonMarie = {lat:50.8607254, lgn:4.3835315};
 
     var map = new google.maps.Map(document.getElementById('map'), {
