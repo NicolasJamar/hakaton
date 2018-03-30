@@ -28,8 +28,8 @@
         <p>J'emménage. Y-a-t'il du bruit dans ce quartier ?</p>
 
         <!-- Liste déroulante-->
-        <div id="parentListeDeroulante">
-<select id="mySelect">
+        <form method="post" action="commune.php" id="parentListeDeroulante">
+		<select id="mySelect" name="commune">
         <option value="Bruxelles-Ville">1000 Bruxelles-Ville</option>
         <option value="Schaerbeek">1030 Schaerbeek</option>
         <option value="Etterbeek">1040 Etterbeek</option>
@@ -51,7 +51,7 @@
         <option value="Josse">1210 St Josse-ten-Noode</option>
     
       </select>
-      <button  id="ok" type="button" class="btn btn-link" onclick="myFunction()">Ok</button>
+      <button  id="ok" type="submit" class="btn btn-link" onclick="myFunction()">Ok</button>
 
     </div>
 

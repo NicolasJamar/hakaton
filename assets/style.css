@@ -177,8 +177,9 @@ h2{
       footer{
         width: 100%;
         background-color: black;
-        position: fixed;
-        bottom:0;
+        position:relative;
+        /* position: fixed;
+        bottom:0; */
         display: flex;
         justify-content: space-around;
         height: 50px;
@@ -221,7 +222,12 @@ background: #ebeff2;
 width: 100%;
 margin-bottom:10px;
 
-}  
+} 
+.maker{
+    text-align:center ;
+    color:white !important;
+    line-height:20px !important;
+} 
 
 @media screen and (max-width: 768px){
 
@@ -236,6 +242,9 @@ margin-bottom:10px;
        .marker{
         width:20px !important;
         height:20px !important;
+        text-align:center;
+        color:white;
+        line-height:20px;
        }
 
 

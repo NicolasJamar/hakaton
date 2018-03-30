@@ -10,6 +10,10 @@ CustomMarker.prototype = new google.maps.OverlayView();
 CustomMarker.prototype.draw = function() {
 	
 	var self = this;
+
+	let marker = function(){
+		return Math.round((Math.random()*30)+70);
+	}
 	
 	var div = this.div;
 	
@@ -18,14 +22,17 @@ CustomMarker.prototype.draw = function() {
 		div = this.div = document.createElement('div');
 		
 		div.className = 'marker';
-		div.innerHTML = 'marker';		
+		div.innerHTML = marker() + 'DB';		
 		
 		div.style.position = 'absolute';
 		div.style.cursor = 'pointer';
-		div.style.maxWidth = '50px';
-		div.style.maxHeight = '50px';
+		div.style.maxWidth = '100px';
+		div.style.maxHeight = '100px';
 		div.style.background = 'RGBA(15,12,14,0.5)';
 		div.style.border ='red solid 3px';
+		div.style.textAlign = 'center';
+		div.style.color = 'white';
+		div.style.borderRadius = '20px';
 
 		
 		

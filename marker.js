@@ -37,19 +37,7 @@ function initialize() {
 		map: map,
 		title: 'Hello World!'
 	});
-	// var marker = new google.maps.Marker({
-	// 	position: Latlng(50.833,4.3),
-	// 	map: map,
-	// 	title: 'Hello World!'
-	// });
-		
-	// overlay = new CustomMarker(
-	// 	myLatlng, 
-	// 	map,
-	// 	{
-	// 		marker_id: '123'
-	// 	}
-	// );
+
 	overlay2 = new CustomMarker(
 		myLatlng2, 
 		map,
